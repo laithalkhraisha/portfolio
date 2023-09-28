@@ -27,24 +27,37 @@ html{
             background-color: var(--color2);
             padding: 12px 20px;
         }
-        @media(max-width: 610px) {
+        @media(max-width: 700px) {
           .about{
             font-size: 10px;
             max-width: 400px;
             max-height: 400px;
 
           }
-          .about .fonts {
+          .fonts {
             font-size: 18px;
             line-height:22px;
+            animation:none;
           }
           .divsm{
             max-height: 500px;
+            
 
           }
+         
         }
         .fonts{
           font-size:x-large; 
+          animation: float 3s linear infinite;
+        }
+        @keyframes float {
+          0%,
+          100% {
+            transform: translateY(0rem);
+          }
+          50% {
+            transform: translateY(3rem);
+          }
         }
 
         .logo  {
